@@ -30,10 +30,10 @@
   $rows = $conn->getrows();
 
   foreach ($rows as $key => $row) {
-    $term = $row['term'];
+    $term = $row['word'];
     $definition = $row['definition'];
     $originator = $row['originator'];
-    $example_use = $row['example_use'];
+    $example_use = $row['use'];
 
     $r = sprintf($trow, $term, $definition, $originator, $example_use);
     $page .= $r;

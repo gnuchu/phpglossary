@@ -5,7 +5,7 @@
     }
     
     function getrows() {
-      $sql = 'select * from terms order by term';
+      $sql = 'select * from definitions order by word';
       $results = $this->query($sql);
       $data = array();
 
